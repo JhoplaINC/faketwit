@@ -1,0 +1,102 @@
+.login-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    width: 1100px;
+
+    .login-form {
+        align-self: flex-start;
+        align-items: center;
+        border: 1px solid #ccc;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        width: 400px;
+
+        .form-group {
+            align-items: center;
+            display: flex;
+            width: 100%;
+            margin-bottom: 15px;
+
+            fa-icon {
+                background-color: #1DA1F2;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                padding: 9.1px;
+                text-align: center;
+                width: 10%;
+            }
+
+            input {
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                width: 90%;
+                box-sizing: border-box;
+
+                &:focus {
+                    border-color: #1DA1F2;
+                    outline: none;
+                }
+            }
+        }
+
+        .login-btn {
+            background-color: #1DA1F2;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+            padding: 6px 20px;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: #1A91DA;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .users-to-login {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 400px;
+
+        h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            margin-top: 0;
+        }
+
+        .users-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            .user {
+                align-items: center;
+                background-color: #62c3ff;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                height: 50px;
+                justify-content: space-evenly;
+                margin-bottom: 15px;;
+                padding: 5px 0;
+                width: 150px;
+    
+                p {
+                    margin: 0;
+                    padding: 0;
+                }            
+            }
+        }
+    }
+}

@@ -1,0 +1,148 @@
+import { iPost } from '../../interfaces/post.interface';
+
+export const dummyPosts: iPost[] = [
+    {
+        id: '1',
+        author: 'John Doe',
+        title: 'Sample Post Title for John Doe',
+        content:
+            'This is a sample post content for John Doe. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        createdAt: new Date('2023-10-01T12:00:00Z'),
+        updatedAt: new Date('2023-10-01T12:00:00Z'),
+        likeCount: 10,
+        commentCount: 1,
+        sharedCount: 2,
+    },
+    {
+        id: '2',
+        author: 'Jane Smith',
+        title: 'Sample Post Title for Jane Smith',
+        content:
+            'This is a sample post content for Jane Smith. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        createdAt: new Date('2023-10-02T14:30:00Z'),
+        updatedAt: new Date('2023-10-02T14:30:00Z'),
+        likeCount: 20,
+        commentCount: 2,
+        sharedCount: 5,
+    },
+    {
+        id: '3',
+        author: 'Alice Johnson',
+        title: 'Sample Post Title for Alice Johnson',
+        content:
+            'This is a sample post content for Alice Johnson. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        createdAt: new Date('2023-10-03T09:15:00Z'),
+        updatedAt: new Date('2023-10-03T09:15:00Z'),
+        likeCount: 15,
+        commentCount: 1,
+        sharedCount: 3,
+    },
+    {
+        id: '4',
+        author: 'Bob Brown',
+        title: 'Sample Post Title for Bob Brown',
+        content:
+            'This is a sample post content for Bob Brown. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        createdAt: new Date('2023-10-04T16:45:00Z'),
+        updatedAt: new Date('2023-10-04T16:45:00Z'),
+        likeCount: 5,
+        commentCount: 0,
+        sharedCount: 1,
+    },
+    {
+        id: '5',
+        author: 'Carlos Rivera',
+        title: 'Sample Post Title for Carlos Rivera',
+        content:
+            'This is a sample post content for Carlos Rivera. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        createdAt: new Date('2023-10-05T11:20:00Z'),
+        updatedAt: new Date('2023-10-05T11:20:00Z'),
+        likeCount: 8,
+        commentCount: 2,
+        sharedCount: 0,
+    },
+    {
+        id: '6',
+        author: 'Emily Clark',
+        title: 'Sample Post Title for Emily Clark',
+        content:
+            'This is a sample post content for Emily Clark. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        createdAt: new Date('2023-10-06T08:10:00Z'),
+        updatedAt: new Date('2023-10-06T08:10:00Z'),
+        likeCount: 12,
+        commentCount: 3,
+        sharedCount: 4,
+    },
+    {
+        id: '7',
+        author: 'David Lee',
+        title: 'Sample Post Title for David Lee',
+        content:
+            'This is a sample post content for David Lee. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        createdAt: new Date('2023-10-07T13:55:00Z'),
+        updatedAt: new Date('2023-10-07T13:55:00Z'),
+        likeCount: 18,
+        commentCount: 4,
+        sharedCount: 2,
+    },
+    {
+        id: '8',
+        author: 'Sophia Martinez',
+        title: 'Sample Post Title for Sophia Martinez',
+        content:
+            'This is a sample post content for Sophia Martinez. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        createdAt: new Date('2023-10-08T17:40:00Z'),
+        updatedAt: new Date('2023-10-08T17:40:00Z'),
+        likeCount: 22,
+        commentCount: 5,
+        sharedCount: 6,
+    },
+    {
+        id: '9',
+        author: 'Michael Chen',
+        title: 'Sample Post Title for Michael Chen',
+        content:
+            'This is a sample post content for Michael Chen. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        createdAt: new Date('2023-10-09T10:05:00Z'),
+        updatedAt: new Date('2023-10-09T10:05:00Z'),
+        likeCount: 7,
+        commentCount: 1,
+        sharedCount: 1,
+    },
+    {
+        id: '10',
+        author: 'Laura Wilson',
+        title: 'Sample Post Title for Laura Wilson',
+        content:
+            'This is a sample post content for Laura Wilson. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        createdAt: new Date('2023-10-10T15:25:00Z'),
+        updatedAt: new Date('2023-10-10T15:25:00Z'),
+        likeCount: 14,
+        commentCount: 2,
+        sharedCount: 3,
+    },
+    {
+        id: '11',
+        author: 'Oscar Gomez',
+        title: 'Sample Post Title for Oscar Gomez',
+        content:
+            'This is a sample post content for Oscar Gomez. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        createdAt: new Date('2023-10-11T19:50:00Z'),
+        updatedAt: new Date('2023-10-11T19:50:00Z'),
+        likeCount: 9,
+        commentCount: 0,
+        sharedCount: 2,
+    },
+    {
+        id: '12',
+        author: 'Natalie Kim',
+        title: 'Sample Post Title for Natalie Kim',
+        content:
+            'This is a sample post content for Natalie Kim. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        createdAt: new Date('2023-10-12T07:35:00Z'),
+        updatedAt: new Date('2023-10-12T07:35:00Z'),
+        likeCount: 16,
+        commentCount: 3,
+        sharedCount: 5,
+    },
+];

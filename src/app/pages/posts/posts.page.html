@@ -1,0 +1,52 @@
+<div class="container">
+    <div class="posts">
+        <ng-container
+            *ngFor="let post of posts | slice:(currentPage - 1) * 6:(currentPage - 1) * 6 + 6"
+        >
+            <div class="post">
+                <div class="post-header">
+                    <p>{{ post.title }}</p>
+                    <p>{{ post.author }}</p>
+                </div>
+                <div class="post-body">
+                    <p>{{ post.content }}</p>
+                </div>
+                <div class="post-footer">
+                    <div class="reactions-section">
+                        <div class="reaction reaction-like">
+                            <fa-icon [icon]="faLike"></fa-icon>
+                            <span class="likes">{{post.likeCount}}</span>
+                        </div>
+                        <div class="reaction reaction-comment">
+                            <fa-icon [icon]="faComment"></fa-icon>
+                            <span class="comments">{{post.commentCount}}</span>
+                        </div>
+                        <div class="reaction reaction-share">
+                            <fa-icon [icon]="faShare"></fa-icon>
+                            <span class="shares">{{post.sharedCount}}</span>
+                        </div>
+                    </div>
+                    <button (click)="openDialog(post)">Ver más</button>
+                </div>
+            </div>
+        </ng-container>
+        <div class="navigation">
+            <button
+                [ngClass]="{ 'disabled': currentPage === 1 }"
+                (click)="previousPage()"
+            >
+                <fa-icon [icon]="faChevronLeft"></fa-icon> Anterior
+            </button>
+            <span>Página {{ currentPage }} de {{ totalPages }}</span>
+            <button
+                [ngClass]="{ 'disabled': currentPage === totalPages }"
+                (click)="nextPage()"
+            >
+                Siguiente <fa-icon [icon]="faChevronRight"></fa-icon>
+            </button>
+        </div>
+        <div class="no-posts" *ngIf="posts.length === 0">
+            <p>No hay publicaciones disponibles.</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,51 @@
+<div class="login-container">
+    <form class="login-form" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <fa-icon [icon]="faAt"></fa-icon>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-control"
+                required
+                [(ngModel)]="email"
+                placeholder="Enter your email"
+            />
+        </div>
+        <div class="form-group">
+            <fa-icon [icon]="faLock"></fa-icon>
+            <input
+                type="password"
+                id="password"
+                name="password"
+                class="form-control"
+                required
+                [(ngModel)]="password"
+                placeholder="Enter your password"
+            />
+        </div>
+        <button type="submit" class="login-btn">Login</button>
+    </form>
+
+    <div class="users-to-login">
+        <h3>Here's a list of users you can use to Login in this fake app</h3>
+        <div class="users-list">
+            <div class="user">
+                <p class="user-name">user&#64;fakeapp.cl</p>
+                <p class="user-password">password1!</p>
+            </div>
+            <div class="user">
+                <p class="user-name">user2&#64;fakeapp.cl</p>
+                <p class="user-password">password2!</p>
+            </div>
+            <div class="user">
+                <p class="user-name">user3&#64;fakeapp.cl</p>
+                <p class="user-password">password3!</p>
+            </div>
+            <div class="user">
+                <p class="user-name">user4&#64;fakeapp.cl</p>
+                <p class="user-password">password4!</p>
+            </div>
+        </div>
+    </div>
+</div>

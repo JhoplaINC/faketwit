@@ -1,0 +1,16 @@
+<div class="modal-container">
+    <div class="modal-header">
+        <p>
+            {{ data.title }}
+        </p>
+        <span (click)="onClose()">&times;</span>
+    </div>
+    <div class="modal-body">
+        <p>
+            {{ data.content }}
+        </p>
+    </div>
+    <div class="modal-footer">
+        <button (click)="onClose()">Cerrar</button>
+    </div>
+</div>

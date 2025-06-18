@@ -1,0 +1,25 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #282c34;
+    color: white;
+    
+    .nav-links {
+        display: flex;
+        gap: 15px;
+    
+        a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+    
+            &:hover {
+                background-color: #3a3f47;
+                cursor: pointer;
+            }
+        }
+    }
+}

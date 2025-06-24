@@ -55,4 +55,8 @@ export class PostsPage {
             this.currentPage++;
         }
     }
+
+    onGoToPost(postid: string) {
+        window.open(`/post/${postid}`, '_blank');
+    }
 }

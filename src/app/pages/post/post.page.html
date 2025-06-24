@@ -1,1 +1,39 @@
-<p>post works!</p>
+<ng-container *ngIf="post">
+    <div class="post-container">
+        <div class="post-header">
+            <h1>{{ post.title }}</h1>
+            <p class="author">Por {{ post.author }}</p>
+        </div>
+
+        <div class="post-body">
+            <p>{{ post.content }}</p>
+        </div>
+
+        <div class="post-footer">
+            <!-- <div class="reactions-section">
+                <div class="reaction reaction-like">
+                    <fa-icon [icon]="faLike"></fa-icon>
+                    <span class="likes">{{ post.likeCount }}</span>
+                </div>
+                <div class="reaction reaction-comment">
+                    <fa-icon [icon]="faComment"></fa-icon>
+                    <span class="comments">{{ post.commentCount }}</span>
+                </div>
+                <div class="reaction reaction-share">
+                    <fa-icon [icon]="faShare"></fa-icon>
+                    <span class="shares">{{ post.sharedCount }}</span>
+                </div>
+            </div> -->
+            <div class="comments">
+                <h2>Comentarios</h2>
+                <ng-container *ngIf="post.comments?.length === 0">
+                    <p>No hay comentarios en esta publicación.</p>
+                </ng-container>
+                <div class="comment" *ngFor="let comment of post.comments">
+                    <p class="comment-author">{{ comment.author }}:</p>
+                    <p class="comment-content">{{ comment.content }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-container>

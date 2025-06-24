@@ -4,11 +4,18 @@ import { LoginComponent } from './components/form/login/login.component';
 import { NavbarComponent } from './components/UI/navbar/navbar.component';
 import { AuthService } from './auth/auth.service';
 import { CommonModule } from '@angular/common';
+import { FooterComponent } from './components/UI/footer/footer.component';
 
 @Component({
     selector: 'app-root',
     standalone: true,
-    imports: [CommonModule, RouterOutlet, NavbarComponent, LoginComponent],
+    imports: [
+        CommonModule,
+        RouterOutlet,
+        NavbarComponent,
+        LoginComponent,
+        FooterComponent,
+    ],
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss',
 })

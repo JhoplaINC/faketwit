@@ -5,7 +5,7 @@
         >
             <div class="post">
                 <div class="post-header">
-                    <p>{{ post.title }}</p>
+                    <p (click)="onGoToPost(post.id)">{{ post.title }}</p>
                     <p>{{ post.author }}</p>
                 </div>
                 <div class="post-body">

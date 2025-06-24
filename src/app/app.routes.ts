@@ -6,28 +6,46 @@ import { AuthGuard } from './auth/auth.guard';
 import { AboutPage } from './pages/about/about.page';
 import { PostsPage } from './pages/posts/posts.page';
 import { PostPage } from './pages/post/post.page';
+import { NotFoundPage } from './pages/not-found/not-found.page';
 
 export const routes: Routes = [
     {
+        path: '',
+        loadComponent: () =>
+            import('./pages/home/home.page').then((m) => m.HomePage),
+    },
+    {
         path: 'login',
-        component: LoginPage,
+        loadComponent: () =>
+            import('./pages/login/login.page').then((m) => m.LoginPage),
         canActivate: [LoginGuard],
     },
     {
         path: 'profile',
-        component: ProfilePage,
+        loadComponent: () =>
+            import('./pages/profile/profile.page').then((m) => m.ProfilePage),
         canActivate: [AuthGuard],
     },
-    {
-        path: 'about',
-        component: AboutPage,
-    },
+    // {
+    //     path: 'about',
+    //     loadComponent: () =>
+    //         import('./pages/about/about.page').then((m) => m.AboutPage),
+    // },
     {
         path: 'posts',
-        component: PostsPage,
+        loadComponent: () =>
+            import('./pages/posts/posts.page').then((m) => m.PostsPage),
     },
     {
         path: 'post/:id',
-        component: PostPage,
+        loadComponent: () =>
+            import('./pages/post/post.page').then((m) => m.PostPage),
+    },
+    {
+        path: 'not-found',
+        loadComponent: () =>
+            import('./pages/not-found/not-found.page').then(
+                (m) => m.NotFoundPage
+            ),
     },
 ];

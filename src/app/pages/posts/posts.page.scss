@@ -25,6 +25,11 @@
                     &:first-child {
                         font-size: 18px;
                         font-weight: bold;
+
+                        &:hover {
+                            text-decoration: underline;
+                            cursor: pointer;
+                        }
                     }
                 }
             }
